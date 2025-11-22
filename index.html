@@ -548,6 +548,133 @@
         .fade-in {
             animation: fadeInUp 0.8s ease forwards;
         }
+
+        /* --- MOBILE RESPONSIVE --- */
+@media (max-width: 768px) {
+
+    /* Container lebih kecil */
+    .container {
+        padding: 0 16px;
+    }
+
+    /* Navbar */
+    nav .container {
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+
+    /* HERO */
+    .hero {
+        padding-top: 120px;
+    }
+
+    .hero .container {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-left: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content .subtitle {
+        font-size: 1.1rem;
+        margin-top: 8px;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+        margin: 0 auto 30px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    /* Hero image */
+    .hero-image-wrapper {
+        width: 260px;
+        height: 260px;
+        margin: 0 auto;
+    }
+
+    .circle-1 {
+        width: 230px;
+        height: 230px;
+        top: 15px;
+        left: 15px;
+    }
+
+    .circle-2 {
+        width: 170px;
+        height: 170px;
+        top: 45px;
+        left: 45px;
+    }
+
+    .character-img {
+        width: 240px;
+        height: 240px;
+    }
+
+    /* Skills */
+    .skills {
+        padding: 70px 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        padding: 26px;
+    }
+
+    /* Projects */
+    .projects {
+        padding: 70px 0;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 200px !important;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 70px 0;
+    }
+
+    .contact-content {
+        padding: 0 10px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -724,6 +851,8 @@
         document.querySelectorAll('.skill-card, .project-card').forEach(card => {
             observer.observe(card);
         });
+
+        
     </script>
 </body>
 </html>
